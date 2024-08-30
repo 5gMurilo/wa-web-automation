@@ -1,7 +1,9 @@
-const WebSocket = require("ws");
-const { Client, LocalAuth } = require("whatsapp-web.js");
+import WebSocket, { WebSocketServer } from 'ws';
+import whatsapp from 'whatsapp-web.js'
 
-const server = new WebSocket.Server({ port: 3000 });
+const {Client, LocalAuth} = whatsapp
+
+const server = new WebSocketServer({port: 3000});
 
 server.on("connection", (socket) => {
   console.log("Client connected to websocket");
