@@ -1,4 +1,4 @@
-import WebSocket, { WebSocketServer } from 'ws';
+import { WebSocketServer } from 'ws';
 import whatsapp from 'whatsapp-web.js'
 
 const {Client, LocalAuth} = whatsapp
